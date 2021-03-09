@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 // or less ideally
 import { Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +18,7 @@ function App() {
 
     
     <div>
-        <FontAwesomeIcon icon={faCoffee} />
+        
         <Router>
           <Switch>
             <Route path="/home">
