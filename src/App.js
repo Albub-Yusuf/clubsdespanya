@@ -13,12 +13,13 @@ import Home from './components/Home/Home';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import NotFound from './components/NotFound/NotFound';
 
+//style={{backgroundColor:'#3AAFA9'}}
+
 function App() {
   return (
 
     
-    <div>
-        
+    <div style={{fontFamily: 'Montserrat,sans-serif',background:'#1F2833'}}>  
         <Router>
           <Switch>
             <Route path="/home">

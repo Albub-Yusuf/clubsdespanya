@@ -3,6 +3,7 @@ import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'react-bootstrap';
 import Team from '../Team/Team';
+import banner from '../../bannerImagess/banner88.png';
 
 
 
@@ -26,16 +27,28 @@ const Home = () => {
     const bannerStyle = {
 
             width: '100%',
-            height: '350px',
+            height: '362px',
             textAlign: 'center',
-            backgroundColor: '#333',
-            color : '#fff',
+            backgroundImage: `url(${banner})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition : 'center center',
+            color : '#FFFFFF',
+            display: 'flex',
+            alignItems : 'center',
+            justifyContent : 'center',
+            fontFamily: 'Montserrat',
+            fontWeight: '700',
+            fontSize: '52px',
+            position:'relative'
+           
+
 
     }
     return (
-        <div>
+        <div className="home-body">
             <div style={bannerStyle}>
-
+                <h1 style={{width: '100%',background: 'rgba(0,0,0,.6)',position:'absolute',zIndex:'2',fontSize:'68px',boxShadow:'10px 10px -20px #fff'}}>clubs d'Espanya</h1>
             </div>
             <Container style={{display:'flex',flexWrap:'wrap'}}>
                 {
