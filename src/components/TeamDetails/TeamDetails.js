@@ -60,7 +60,7 @@ const TeamDetails = () => {
     if (strGender === "Male") {
 
         teamInfoStyle = { backgroundColor: '#048654' }
-        teamPhoto = <img style={{ width: '100%' }} src={male} />
+        teamPhoto = <img style={{ width: '100%', borderRadius: '20px' }} src={male} />
         gender = <FontAwesomeIcon icon={faMars}></FontAwesomeIcon>
 
     }

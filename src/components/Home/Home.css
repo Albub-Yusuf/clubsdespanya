@@ -19,12 +19,13 @@
 .banner h1
 {
     width: 100%;
-    background: rgba(0,0,0,.6);
+    background: rgba(0,0,0,.8);
     position: absolute;
     z-index: 2;
     font-weight: 700;
     font-size: 72px;
     box-shadow: 10px 10px -20px #FFFFFF;
+    
 
 }
 
@@ -32,5 +33,30 @@
 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     
 }
+
+
+@media (max-width: 608px) {
+    
+   .banner h1{
+
+        font-size: 48px;
+        font-weight: 800;
+        
+   } 
+
+}
+
+@media (max-width: 404px) {
+    
+    .banner h1{
+ 
+         font-size: 36px;
+         font-weight: 800;
+         
+    } 
+ 
+ }

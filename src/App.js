@@ -7,11 +7,15 @@ import Home from './components/Home/Home';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import NotFound from './components/NotFound/NotFound';
 
-//style={{backgroundColor:'#1F2833'}}
-
 function App() {
+
+  const basicStyle =  {  
+    fontFamily: 'Montserrat,sans-serif',
+    background:'#1F2833'
+  }
+ 
   return (    
-    <div style={{fontFamily: 'Montserrat,sans-serif',background:'#1F2833'}}>  
+    <div style={basicStyle}>  
         <Router>
           <Switch>
             <Route path="/home">

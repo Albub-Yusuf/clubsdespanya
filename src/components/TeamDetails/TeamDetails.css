@@ -32,6 +32,7 @@
 
 .team-brief-info{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     border-radius: 20px;
     padding: 20px;
@@ -88,3 +89,39 @@
 
     min-height: 600px;
 }
+
+@media (max-width: 991px) {
+    .team-brief-info {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .team-data{
+        width: 100%;
+        
+    }
+    
+    .team-photo{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+  }
+
+  @media (max-width: 252px) {
+    .team-brief-info {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .team-data{
+        width: 100%;
+        font-size: 12px;
+        
+    }
+    
+    .team-photo{
+        width: 100%;
+    }
+    
+  }

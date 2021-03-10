@@ -9,12 +9,14 @@ const NotFound = () => {
     return (
         <Container fluid className="not-found-wrapper">
 
-            <div className="not-found">
-                <img src={lost} alt="page not found"></img>
-            </div>
-            
-            <div className="not-found">
-                <Link to="/home"><Button>Back to Home</Button></Link>
+            <div >
+                <div className="not-found">
+                    <img src={lost} alt="page not found"></img>
+                </div>
+
+                <div className="not-found">
+                    <Link to="/home"><Button>Route not found let's get Back to home</Button></Link>
+                </div>
             </div>
 
         </Container>
