@@ -2,23 +2,21 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button } from 'react-bootstrap';
 import './NotFound.css';
-import lost from '../../404-error.gif';
+import lost from '../../images/404.webp';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
-        <Container style={{marginTop:'50px'}} >
-        <div>
-           
-        <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-            <img src={lost} alt="page not found"></img>
-        </div>
+        <Container fluid className="not-found-wrapper">
 
-        <div style={{display:'flex', alignItems:'center', justifyContent:'center',margin: '20px auto'}}>
-            <Link to="/home"><Button>Back to Home</Button></Link>
-        </div>
+            <div className="not-found">
+                <img src={lost} alt="page not found"></img>
+            </div>
+            
+            <div className="not-found">
+                <Link to="/home"><Button>Back to Home</Button></Link>
+            </div>
 
-    </div>
         </Container>
     );
 };
