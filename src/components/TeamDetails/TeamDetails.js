@@ -75,7 +75,7 @@ const TeamDetails = () => {
 
         <div className="team-details-wrapper">
             {/* Banner */}
-            <div class="banner">
+            <div className="banner">
                 <div className="banner-content">
                     <Link to="/home">
                         <img src={strTeamBadge} alt="logo" />
