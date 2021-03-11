@@ -28,16 +28,19 @@ const TeamDetails = () => {
 
     }, [teamId])
 
+    //Declared & set variables for props destructuring
 
-    let idTeam, strLeague, strAlternate, intFormedYear, strSport, strCountry, strFacebook, strTwitter, strDescriptionEN, strGender, strYoutube, strTeamBadge;
+    let idTeam, strLeague, strTeamBanner, strAlternate, intFormedYear, strSport, strCountry, strFacebook, strTwitter, strDescriptionEN, strGender, strYoutube, strTeamBadge;
     teamDetails.map(td => {
 
-        return { idTeam, intFormedYear, strAlternate, strSport, strLeague, strCountry, strFacebook, strTwitter, strDescriptionEN, strGender, strYoutube, strTeamBadge } = td;
+        return { idTeam, strTeamBanner, intFormedYear, strAlternate, strSport, strLeague, strCountry, strFacebook, strTwitter, strDescriptionEN, strGender, strYoutube, strTeamBadge } = td;
 
     })
 
+    //declare social links variable
     let youtubeLink, twitterLink, facebookLink;
 
+    //set up social links values
     if (strYoutube || strFacebook || strTwitter) {
         youtubeLink = 'https://' + strYoutube;
         twitterLink = 'https://' + strTwitter;
@@ -50,10 +53,32 @@ const TeamDetails = () => {
 
     }
 
+    //set dynamic banners style
+    const teamBannerStyle = {
+
+        width: '100%',
+        height: '362px',
+        textAlign: 'center',
+        color: '#FFFFFF',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'relative',
+        backgroundImage: `url('${strTeamBanner}')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+
+
+
+    }
+
 
     // Conditional Rendering part starts here
     //set variable for conditional Rendering
     let teamPhoto, gender, teamInfoStyle;
+
+
 
     if (strGender === "Male") {
 
@@ -75,11 +100,13 @@ const TeamDetails = () => {
 
         <div className="team-details-wrapper">
             {/* Banner */}
-            <div className="banner">
+            <div style={teamBannerStyle}>
                 <div className="banner-content">
-                    <Link to="/home">
-                        <img src={strTeamBadge} alt="logo" />
-                    </Link>
+                    <div className="banner-content-logo">
+                        <Link to="/home">
+                            <img src={strTeamBadge} alt="logo" />
+                        </Link>
+                    </div>
                 </div>
             </div>
 
