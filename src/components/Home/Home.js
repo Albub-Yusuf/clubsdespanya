@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?s=Soccer&c=Spain')
+        fetch('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=Spanish%20La%20Liga')
             .then(res => res.json())
             .then(data => setTeams(data.teams))
 
