@@ -5,12 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import male from '../../images/male.png';
 import female from '../../images/female.png';
-import twitter from '../../images/Twitter.png';
-import facebook from '../../images/Facebook.png';
-import youtube from '../../images/YouTube.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faFutbol, faFlag, faVenus, faMars } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -107,8 +105,6 @@ const TeamDetails = () => {
                 {/* Team Description */}
                 <Container className="team-history">
                     <p>{strDescriptionEN}</p>
-                    <br></br>
-                    <p>{strDescriptionEN}</p>
                 </Container>
 
                 {/* Social Info */}
@@ -117,15 +113,15 @@ const TeamDetails = () => {
                     <div className="social-icon-wrapper">
 
                         <div className="social-icon">
-                            <a target="_blank" href={twitterLink}><img src={twitter} alt="twitter"></img></a>
+                            <a target="_blank" href={twitterLink}><span className="twitter-icon"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></span></a>
                         </div>
 
                         <div className="social-icon">
-                            <a target="_blank" href={facebookLink}> <img src={facebook} alt="Facebook"></img></a>
+                            <a target="_blank" href={facebookLink}><span className="facebook-icon"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></span></a>
                         </div>
 
                         <div className="social-icon">
-                            <a target="_blank" href={youtubeLink}> <img src={youtube} alt="Youtube"></img></a>
+                            <a target="_blank" href={youtubeLink}><span className="youtube-icon"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></span></a>
                         </div>
 
                     </div>

@@ -70,20 +70,54 @@
 
 .social-icon{
 
-     width: 70px;
-     height: 70px;
+     width: 60px;
+     height: 60px;
      text-align: center;
      display: flex;
      align-items: center;
      justify-content: center;
+     font-size: 32px;
+     background-color: #FFFFFF;
+     border-radius: 50%;
+     margin-right: 10px;
+    
+     
 
 
 }
 
-.social-icon img{
-
-    width: 80%;
+.youtube-icon{
+    color: rgba(255, 0, 0, 1);
+   
 }
+
+.youtube-icon:hover{
+    font-size: 35px;
+}
+
+.twitter-icon{
+    color: #1DA1F2;
+   
+}
+
+.twitter-icon:hover{
+    
+    font-size: 35px;
+  
+}
+
+
+
+.facebook-icon{
+    color: #4267B2;
+   
+}
+
+.facebook-icon:hover{
+    
+    font-size: 35px; 
+}
+
 
 .details-container{
 
